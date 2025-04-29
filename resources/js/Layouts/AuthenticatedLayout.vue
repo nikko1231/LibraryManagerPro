@@ -21,7 +21,7 @@ const showingNavigationDropdown = ref(false);
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('dashboard')">
-                                <img class="w-1/3" src="../../images/lms_logo-1.png" alt="..." />
+                                <img class="w-1/3" src="../../images/lms_logo-2.png" alt="..." />
                                 </Link>
                             </div>
 

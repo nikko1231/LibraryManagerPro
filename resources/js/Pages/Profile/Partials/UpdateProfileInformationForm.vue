@@ -19,6 +19,7 @@ const user = usePage().props.auth.user;
 const form = useForm({
     name: user.name,
     email: user.email,
+    profile: user.profile, // Make sure you have this field if you plan to edit later.
 });
 </script>
 
@@ -31,6 +32,22 @@ const form = useForm({
                 Update your account's profile information and email address.
             </p>
         </header>
+
+        <!-- ADD THIS BLOCK TO DISPLAY PROFILE PHOTO -->
+        <div class="flex justify-center my-4">
+            <img
+                v-if="user.profile"
+                :src="`/storage/admin.jpg/${user.profile}`"
+                class="w-24 h-24 rounded-full object-cover"
+                alt="Profile Picture"
+            />
+            <img
+                v-else
+                src="/default-avatar.png"
+                class="w-24 h-24 rounded-full object-cover"
+                alt="Default Profile Picture"
+            />
+        </div>
 
         <form @submit.prevent="form.patch(route('profile.update'))" class="mt-6 space-y-6">
             <div>

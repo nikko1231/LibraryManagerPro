@@ -27,7 +27,7 @@ defineProps({
         <div class="max-w-7xl mx-auto p-6 lg:p-8">
             <h1 class="text-center font-bold text-3xl text-gray-600 ms-28">Welcome to</h1>
             <div class="flex justify-center">
-                <img src="../../images/lms_logo-1.png" />
+                <img src="../../images/lms_logo-2.png" />
             </div>
             <div v-if="canLogin" class="flex gap-5 mt-12 justify-center">
                 <Link v-if="$page.props.auth.user" :href="route('dashboard')">

@@ -20,8 +20,8 @@ const form = useForm({
             <img width="120" src="../../../images/lms_logo-2.png">
         </div>
     </div>
-    <div class="h-100 bg-gray-800 px-[20px] flex items-center gap-3 py-3">
-        <img class="rounded-full" :src="path + form.profile" style="width: 64px; height: 64px;">
+    <div class="h-100 bg-gray-800 px-[137px] flex items-center gap-15 py-15">
+        
         <div>
             <h3 class="text-gray-100">{{ form.name }}</h3>
             <p class="text-gray-500" v-if="form.role == 1">Admin</p>
