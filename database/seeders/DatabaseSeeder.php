@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'nikkoregulacion@gmail.com',
             'password' => Hash::make('password123'),
             'is_admin' => 1,
+            'profile_img' => 'admin.jpg',
         ]);
     }
 }
